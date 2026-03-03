@@ -1,40 +1,51 @@
-// Adiciona interatividade suave ao site
+// Interações e animações suaves do orçamento para hotel
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Animação suave ao scroll
+document.addEventListener('DOMContentLoaded', function () {
+    // Fade-in das seções ao rolar a página
+    const sections = document.querySelectorAll('.section');
+
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.15,
+        rootMargin: '0px 0px -80px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('animate-in');
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Observa todas as seções
-    const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(section);
     });
 
-    // Efeito hover melhorado nas tabelas
+    // Microinteração: leve zoom nas linhas das tabelas
     const tableRows = document.querySelectorAll('.pricing-table tbody tr');
     tableRows.forEach(row => {
-        row.addEventListener('mouseenter', function() {
+        row.style.transition = 'transform 0.18s ease';
+        row.addEventListener('mouseenter', function () {
             this.style.transform = 'scale(1.01)';
-            this.style.transition = 'transform 0.2s ease';
         });
-        row.addEventListener('mouseleave', function() {
+        row.addEventListener('mouseleave', function () {
             this.style.transform = 'scale(1)';
         });
     });
+
+    // Acessibilidade: permitir focar cards com Tab
+    const focusableCards = document.querySelectorAll('.version-card, .info-card, .maintenance-card');
+    focusableCards.forEach(card => {
+        card.setAttribute('tabindex', '0');
+        card.addEventListener('focus', () => {
+            card.style.outline = '2px solid rgba(59,130,246,0.7)';
+            card.style.outlineOffset = '2px';
+        });
+        card.addEventListener('blur', () => {
+            card.style.outline = 'none';
+        });
+    });
 });
+
 

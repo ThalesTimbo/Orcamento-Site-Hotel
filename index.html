@@ -10,285 +10,421 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <h1 class="main-title">Proposta de Desenvolvimento de Site para Hotel</h1>
-            <p class="intro-text">
-                Esta é uma apresentação clara e objetiva das opções de site, domínio e hospedagem para o seu hotel,
-                facilitando a escolha da melhor versão: reservas via WhatsApp ou sistema de reservas diretamente no
-                próprio site, além dos respectivos custos de desenvolvimento.
-            </p>
-        </header>
-
-        <!-- Versões do Site -->
-        <section class="section" id="versoes-site">
-            <h2 class="section-title">Versões do Site do Hotel</h2>
-            <div class="versions-grid">
-                <!-- Versão 1 -->
-                <div class="version-card">
-                    <div class="version-header">
-                        <span class="version-icon">🔹</span>
-                        <h3 class="version-title">Versão 1 — Site institucional com reservas via WhatsApp</h3>
-                    </div>
-                    <ul class="version-features">
-                        <li>O site apresenta as principais informações do hotel, fotos dos ambientes e serviços</li>
-                        <li>O botão de reserva leva o hóspede diretamente para o WhatsApp da recepção</li>
-                        <li>Estrutura mais simples e direta, ideal para quem está começando</li>
-                        <li>Hospedagem mais econômica, adequada para site institucional</li>
-                        <li class="price-item"><strong class="price-highlight">Versão 1 — investimento a partir de R$ 1.200,00</strong></li>
-                    </ul>
-                </div>
-
-                <!-- Versão 2 -->
-                <div class="version-card">
-                    <div class="version-header">
-                        <span class="version-icon">🔹</span>
-                        <h3 class="version-title">Versão 2 — Site com sistema de reservas no próprio site</h3>
-                    </div>
-                    <ul class="version-features">
-                        <li>O hóspede seleciona datas de entrada e saída diretamente no site</li>
-                        <li>Escolha do tipo de acomodação (quartos, suítes, etc.)</li>
-                        <li>Formulário completo de dados do hóspede e detalhes da reserva</li>
-                        <li>Estrutura com back-end para gerenciar reservas</li>
-                        <li>Hospedagem mais completa, adequada para sistema de reservas</li>
-                        <li class="price-item"><strong class="price-highlight">Versão 2 — investimento estimado em R$ 3.000,00</strong></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Prazo de Entrega -->
-        <section class="section delivery-section" id="prazos">
-            <h2 class="section-title">Prazos de Entrega</h2>
-            <div class="delivery-grid">
-                <div class="delivery-card">
-                    <div class="delivery-icon">⏱️</div>
-                    <h3 class="delivery-title">Versão com reservas via WhatsApp</h3>
-                    <p class="delivery-time">Prazo estimado: <strong>7 a 15 dias</strong></p>
-                </div>
-                <div class="delivery-card">
-                    <div class="delivery-icon">📅</div>
-                    <h3 class="delivery-title">Versão com reservas on-line no site</h3>
-                    <p class="delivery-time">Prazo estimado: <strong>15 a 25 dias</strong></p>
-                </div>
-            </div>
-            <p class="info-text">
-                Os prazos podem variar de acordo com a agilidade no envio de textos, fotos e demais materiais pelo hotel,
-                além de eventuais ajustes solicitados durante o projeto.
-            </p>
-        </section>
-
-        <!-- Planos de Domínio -->
-        <section class="section" id="dominio-hospedagem">
-            <h2 class="section-title">Planos de Domínio</h2>
-
-            <div class="info-grid">
-                <div class="info-box">
-                    <div class="info-icon">🌐</div>
-                    <h3 class="info-title">O que é o domínio?</h3>
-                    <p class="info-text">
-                        O domínio é o endereço do seu site na internet (por exemplo: <strong>seuhotel.com.br</strong>).
-                        É o nome que os hóspedes vão digitar para encontrar o site do seu hotel.
-                    </p>
-                </div>
-                <div class="info-box">
-                    <div class="info-icon">✅</div>
-                    <h3 class="info-title">Por que registrar?</h3>
-                    <p class="info-text">
-                        Ter um domínio próprio transmite mais credibilidade, facilita a divulgação e fortalece a marca
-                        do hotel em todos os materiais de comunicação.
-                    </p>
-                </div>
-            </div>
-
-            <div class="table-container">
-                <table class="pricing-table">
-                    <thead>
-                        <tr>
-                            <th>Plano</th>
-                            <th>Duração</th>
-                            <th>Valor</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Básico</td>
-                            <td>1 ano</td>
-                            <td>R$ 94,99</td>
-                        </tr>
-                        <tr>
-                            <td>Intermediário</td>
-                            <td>2 anos</td>
-                            <td>R$ 149,99</td>
-                        </tr>
-                        <tr>
-                            <td>Econômico</td>
-                            <td>3 anos</td>
-                            <td>R$ 189,99</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="info-text">
-                Quanto maior o tempo contratado, menor o investimento proporcional por ano.<br>
-                Planos mais longos normalmente oferecem melhor custo-benefício.<br>
-                <span class="note-text">* Os valores apresentados são referentes apenas aos primeiros anos. Após o período contratado, será cobrado um valor mensal (pago anualmente), que será o mesmo independente do plano escolhido.</span>
-            </p>
-        </section>
-
-        <!-- Planos de Hospedagem -->
-        <section class="section hosting-section-wrapper">
-            <h2 class="section-title">Planos de Hospedagem</h2>
-            <p class="hosting-explanation">
-                A hospedagem é o serviço que armazena seu site na internet, permitindo que ele fique acessível 24 horas por dia. 
-                É como alugar um espaço em um servidor para que o site do seu hotel possa ser visualizado por qualquer pessoa no mundo.
-            </p>
-            
-            <!-- Hospedagem Site Simples -->
-            <div class="hosting-section">
-            <h3 class="hosting-subtitle">Hospedagem para site simples (reservas via WhatsApp)</h3>
-                <div class="table-container">
-                    <table class="pricing-table">
-                        <thead>
-                            <tr>
-                                <th>Plano</th>
-                                <th>Duração</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Básico</td>
-                                <td>1 ano</td>
-                                <td>R$ 119,88</td>
-                            </tr>
-                            <tr>
-                                <td>Intermediário</td>
-                                <td>2 anos</td>
-                                <td>R$ 191,76</td>
-                            </tr>
-                            <tr>
-                                <td>Econômico</td>
-                                <td>4 anos</td>
-                                <td>R$ 287,52</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="info-text hosting-note">
-                    <span class="note-text">* Os valores apresentados são referentes apenas aos primeiros anos. Após o período contratado, será cobrado um valor mensal de R$ 23,99 (pago anualmente), que será o mesmo independente do plano escolhido.</span>
-                    <span class="note-text">* O valor da hospedagem mais simples, para o site institucional com reservas via WhatsApp, você paga diretamente a mim.</span>
+    <div class="page">
+        <!-- Cabeçalho / Hero -->
+        <header class="hero">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Proposta Comercial • Site para Hotel</p>
+                <h1 class="hero-title">Proposta de Desenvolvimento de Site para Hotel</h1>
+                <p class="hero-subtitle">
+                    Esta é uma apresentação clara e objetiva das opções de site, domínio e hospedagem para o seu hotel,
+                    facilitando a escolha da melhor versão: reservas via WhatsApp ou sistema de reservas diretamente no
+                    próprio site, além dos respectivos custos de desenvolvimento.
                 </p>
             </div>
-
-            <!-- Hospedagem Site com Reservas -->
-            <div class="hosting-section">
-                <h3 class="hosting-subtitle">Hospedagem para site com sistema de reservas</h3>
-                <div class="table-container">
-                    <table class="pricing-table">
-                        <thead>
-                            <tr>
-                                <th>Plano</th>
-                                <th>Duração</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Básico</td>
-                                <td>1 ano</td>
-                                <td>R$ 143,88</td>
-                            </tr>
-                            <tr>
-                                <td>Intermediário</td>
-                                <td>2 anos</td>
-                                <td>R$ 263,76</td>
-                            </tr>
-                            <tr>
-                                <td>Econômico</td>
-                                <td>4 anos</td>
-                                <td>R$ 479,52</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="hero-highlight">
+                <p>Do institucional ao sistema de reservas completo,<br><strong>pensado para aumentar suas reservas on-line.</strong></p>
             </div>
+        </header>
 
-            <p class="info-text">
-                Os valores são proporcionais ao tempo contratado.<br>
-                Quanto maior o período, menor o valor anual.<br>
-                Após o período contratado, a renovação ocorre pelo valor padrão do serviço.<br>
-                <span class="note-text">* Os valores apresentados são referentes apenas aos primeiros anos. Após o período contratado, será cobrado um valor mensal de R$ 49,99 (pago anualmente), que será o mesmo independente do plano escolhido.</span>
-                    <span class="note-text">* O valor da hospedagem mais completa, você paga diretamente ao provedor de hospedagens</span>
-            </p>
-        </section>
-
-
-
-        <!-- Custos de Produção do Site / Propostas de Desenvolvimento -->
-        <section class="section">
-            <h2 class="section-title">Versões do Site do Hotel (Propostas de Desenvolvimento)</h2>
-            <p class="info-text production-intro">
-                Abaixo estão as propostas de desenvolvimento do site do seu hotel,
-                separadas por versão. Cada proposta explica o que será entregue e o valor estimado para o desenvolvimento.
-            </p>
-
-            <div class="versions-grid">
-                <!-- Proposta 1 -->
-                <div class="version-card">
-                    <div class="version-header">
-                        <span class="version-icon">💎</span>
-                        <h3 class="version-title">PROPOSTA 1 — Site institucional com reservas via WhatsApp</h3>
-                    </div>
-                    <ul class="version-features">
-                        <li>Modelo mais simples e objetivo para apresentar o seu hotel e facilitar o contato para reservas</li>
-                        <li>Layout moderno e responsivo (funciona muito bem em celulares)</li>
-                        <li>Página inicial personalizada com identidade visual do hotel</li>
-                        <li>Seções para apresentação de quartos, serviços, comodidades e localização</li>
-                        <li>Botão automático “Reservar pelo WhatsApp” em pontos estratégicos do site</li>
-                        <li>Cadastro inicial de até X tipos de acomodações (definidos no início do projeto)</li>
-                        <li>Indicado para hotéis que desejam presença profissional na internet com investimento inicial mais baixo</li>
-                        <li>Não possui sistema de reservas automatizadas dentro do site</li>
-                        <li><strong>Prazo estimado de desenvolvimento da Proposta 1: 15 a 30 dias</strong></li>
-                        <li><strong>Valor estimado de desenvolvimento: R$ 1.200,00 a R$ 2.000,00 (dependendo de estrutura e complexidade do site)</strong></li>
-                    </ul>
+        <main class="content">
+            <!-- Bloco 1: Versões do Site -->
+            <section class="section" id="versoes-site">
+                <div class="section-header">
+                    <h2 class="section-title">Versões do Site do Hotel</h2>
+                    <p class="section-description">
+                        Abaixo estão as duas opções principais de site, pensadas para atender diferentes momentos do seu hotel:
+                        uma versão mais simples, focada em contato via WhatsApp, e outra com sistema de reservas diretamente no site.
+                    </p>
                 </div>
 
-                <!-- Proposta 2 -->
-                <div class="version-card">
-                    <div class="version-header">
-                        <span class="version-icon">🛎️</span>
-                        <h3 class="version-title">PROPOSTA 2 — Site com sistema de reservas on-line</h3>
-                    </div>
-                    <ul class="version-features">
-                        <li>Modelo mais completo, com sistema de reservas diretamente no site</li>
-                        <li>O hóspede escolhe as datas de entrada e saída → seleciona o tipo de quarto → preenche formulário de reserva</li>
-                        <li>Layout personalizado e profissional alinhado à identidade visual do hotel</li>
-                        <li>Sistema de reservas com formulário estruturado, envio de pedido de reserva por e-mail ou painel</li>
-                        <li>Possibilidade de integração com meios de pagamento (Pix, cartão, etc.), caso desejado em uma fase posterior</li>
-                        <li>Painel ou fluxo para gerenciar solicitações de reserva e cadastro de até X tipos de acomodações</li>
-                        <li>SEO básico para melhor posicionamento do hotel nos mecanismos de busca</li>
-                        <li>Maior organização e profissionalismo na gestão de reservas feitas pelo site</li>
-                        <li><strong>Prazo estimado de desenvolvimento da Proposta 2: 20 a 45 dias</strong></li>
-                        <li><strong>Valor estimado de desenvolvimento: R$ 2.000,00 a R$ 3.500,00 (dependendo de estrutura e complexidade do site)</strong></li>
-                    </ul>
-                </div>
-            </div>
+                <div class="cards-grid">
+                    <!-- Versão 1 -->
+                    <article class="card version-card">
+                        <div class="card-badge">Versão 1</div>
+                        <div class="card-header">
+                            <span class="card-icon">🔹</span>
+                            <div>
+                                <h3 class="card-title">Site institucional com reservas via WhatsApp</h3>
+                                <p class="card-subtitle">Ideal para quem está iniciando a presença digital do hotel.</p>
+                            </div>
+                        </div>
+                        <ul class="card-list">
+                            <li>O site apresenta as principais informações do hotel, fotos dos ambientes e serviços</li>
+                            <li>O botão de reserva leva o hóspede diretamente para o WhatsApp da recepção</li>
+                            <li>Estrutura mais simples e direta, ideal para quem está começando</li>
+                            <li>Hospedagem mais econômica, adequada para site institucional</li>
+                        </ul>
+                        <div class="card-price-block">
+                            <span class="card-price-label">Investimento estimado</span>
+                            <span class="card-price">a partir de R$ 1.200,00</span>
+                            <p class="card-price-note">Valores detalhados na seção de propostas de desenvolvimento.</p>
+                        </div>
+                        <!-- Botão de reserva via WhatsApp para o hotel -->
+                        <a
+                          href="https://wa.me/5588981903220?text=Ol%C3%A1,%20gostei%20da%20vers%C3%A3o%201%20do%20site%20para%20hotel%20e%20gostaria%20de%20fazer%20uma%20reserva."
+                          target="_blank"
+                          class="card-whatsapp-button"
+                        >
+                          Reservar pelo WhatsApp
+                        </a>
+                    </article>
 
-            <p class="info-text">
-                <strong>Observação importante sobre ajustes:</strong> na primeira semana após a entrega, estão incluídas alterações de texto e pequenos ajustes visuais que o cliente solicitar. 
-                Após esse período, novas mudanças podem ser cobradas à parte, de acordo com a complexidade de cada solicitação.
-            </p>
-            <p class="info-text">
-                Esses valores são referentes apenas à produção inicial do site (desenvolvimento).<br>
-                O pagamento é único e não se repete, sendo cobrado apenas uma vez no início do projeto.<br>
-                Depois disso, o hotel arca apenas com os custos recorrentes de domínio e hospedagem.
-            </p>
-        </section>
+                    <!-- Versão 2 -->
+                    <article class="card version-card">
+                        <div class="card-badge card-badge-highlight">Versão 2</div>
+                        <div class="card-header">
+                            <span class="card-icon">🔹</span>
+                            <div>
+                                <h3 class="card-title">Site com sistema de reservas no próprio site</h3>
+                                <p class="card-subtitle">Para hotéis que desejam automatizar e organizar as reservas.</p>
+                            </div>
+                        </div>
+                        <ul class="card-list">
+                            <li>O hóspede seleciona datas de entrada e saída diretamente no site</li>
+                            <li>Escolha do tipo de acomodação (quartos, suítes, etc.)</li>
+                            <li>Formulário completo de dados do hóspede e detalhes da reserva</li>
+                            <li>Estrutura com back-end para gerenciar reservas</li>
+                            <li>Hospedagem mais completa, adequada para sistema de reservas</li>
+                        </ul>
+                        <div class="card-price-block">
+                            <span class="card-price-label">Investimento estimado</span>
+                            <span class="card-price">em torno de R$ 3.000,00</span>
+                            <p class="card-price-note">Valores detalhados na seção de propostas de desenvolvimento.</p>
+                        </div>
+                        <!-- Substitua SEUNUMERO pelo número no formato internacional, ex: 5599999999999 -->
+                        <a
+                          href="https://wa.me/5588981903220?text=Ol%C3%A1,%20gostei%20da%20vers%C3%A3o%202%20do%20site%20para%20hotel%20e%20gostaria%20de%20fazer%20uma%20reserva."
+                          target="_blank"
+                          class="card-whatsapp-button secondary"
+                        >
+                          Reservar on-line
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Bloco 2: Prazos de Entrega -->
+            <section class="section" id="prazos">
+                <div class="section-header">
+                    <h2 class="section-title">Prazos de Entrega</h2>
+                    <p class="section-description">
+                        Os prazos abaixo consideram um fluxo normal de aprovação e envio de materiais (textos, fotos e informações do hotel).
+                    </p>
+                </div>
+
+                <div class="cards-grid small">
+                    <article class="card info-card">
+                        <div class="info-icon">⏱️</div>
+                        <h3 class="info-title">Versão com reservas via WhatsApp</h3>
+                        <p class="info-main"><strong>Prazo estimado: 7 a 15 dias</strong></p>
+                    </article>
+
+                    <article class="card info-card">
+                        <div class="info-icon">📅</div>
+                        <h3 class="info-title">Versão com reservas on-line no site</h3>
+                        <p class="info-main"><strong>Prazo estimado: 15 a 25 dias</strong></p>
+                    </article>
+                </div>
+
+                <p class="info-text">
+                    Os prazos podem variar de acordo com a agilidade no envio de textos, fotos e demais materiais pelo hotel,
+                    além de eventuais ajustes solicitados durante o projeto.
+                </p>
+            </section>
+
+            <!-- Bloco 3: Domínio e Hospedagem -->
+            <section class="section" id="dominio-hospedagem">
+                <div class="section-header">
+                    <h2 class="section-title">Domínio e Hospedagem</h2>
+                    <p class="section-description">
+                        A seguir, um resumo do que é cada item e dos planos sugeridos para o site do seu hotel.
+                    </p>
+                </div>
+
+                <!-- Domínio: texto + tabela -->
+                <div class="two-column">
+                    <div class="column">
+                        <div class="card info-card">
+                            <div class="info-icon">🌐</div>
+                            <h3 class="info-title">O que é o domínio?</h3>
+                            <p class="info-text">
+                                O domínio é o endereço do seu site na internet (por exemplo: <strong>seuhotel.com.br</strong>).
+                                É o nome que os hóspedes vão digitar para encontrar o site do seu hotel.
+                            </p>
+                            <p class="info-text">
+                                Ter um domínio próprio transmite mais credibilidade, facilita a divulgação e fortalece a marca
+                                do hotel em todos os materiais de comunicação.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="table-container">
+                            <table class="pricing-table">
+                                <thead>
+                                <tr>
+                                    <th>Plano</th>
+                                    <th>Duração</th>
+                                    <th>Valor</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Básico</td>
+                                    <td>1 ano</td>
+                                    <td>R$ 94,99</td>
+                                </tr>
+                                <tr>
+                                    <td>Intermediário</td>
+                                    <td>2 anos</td>
+                                    <td>R$ 149,99</td>
+                                </tr>
+                                <tr>
+                                    <td>Econômico</td>
+                                    <td>3 anos</td>
+                                    <td>R$ 189,99</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="info-text">
+                            Quanto maior o tempo contratado, menor o investimento proporcional por ano.<br>
+                            Planos mais longos normalmente oferecem melhor custo-benefício.<br>
+                            <span class="note-text">
+                                * Os valores apresentados são referentes apenas aos primeiros anos.
+                                Após o período contratado, será cobrado um valor mensal (pago anualmente),
+                                que será o mesmo independente do plano escolhido.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hospedagem: explicação + tabelas -->
+                <div class="section-subblock">
+                    <h3 class="section-subtitle">Planos de Hospedagem</h3>
+                    <p class="hosting-explanation">
+                        A hospedagem é o serviço que armazena seu site na internet, permitindo que ele fique acessível 24 horas por dia. 
+                        É como alugar um espaço em um servidor para que o site do seu hotel possa ser visualizado por qualquer pessoa no mundo.
+                    </p>
+
+                    <!-- Site simples -->
+                    <div class="hosting-group">
+                        <h4 class="hosting-title">Hospedagem para site simples (reservas via WhatsApp)</h4>
+                        <div class="table-container">
+                            <table class="pricing-table">
+                                <thead>
+                                <tr>
+                                    <th>Plano</th>
+                                    <th>Duração</th>
+                                    <th>Valor</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Básico</td>
+                                    <td>1 ano</td>
+                                    <td>R$ 119,88</td>
+                                </tr>
+                                <tr>
+                                    <td>Intermediário</td>
+                                    <td>2 anos</td>
+                                    <td>R$ 191,76</td>
+                                </tr>
+                                <tr>
+                                    <td>Econômico</td>
+                                    <td>4 anos</td>
+                                    <td>R$ 287,52</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="info-text">
+                            <span class="note-text">
+                                * Os valores apresentados são referentes apenas aos primeiros anos.
+                                Após o período contratado, será cobrado um valor mensal de R$ 23,99 (pago anualmente),
+                                que será o mesmo independente do plano escolhido.
+                            </span>
+                            <span class="note-text">
+                                * O valor da hospedagem mais simples, para o site institucional com reservas via WhatsApp, você paga diretamente a mim.
+                            </span>
+                        </p>
+                    </div>
+
+                    <!-- Site com reservas -->
+                    <div class="hosting-group">
+                        <h4 class="hosting-title">Hospedagem para site com sistema de reservas</h4>
+                        <div class="table-container">
+                            <table class="pricing-table">
+                                <thead>
+                                <tr>
+                                    <th>Plano</th>
+                                    <th>Duração</th>
+                                    <th>Valor</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Básico</td>
+                                    <td>1 ano</td>
+                                    <td>R$ 143,88</td>
+                                </tr>
+                                <tr>
+                                    <td>Intermediário</td>
+                                    <td>2 anos</td>
+                                    <td>R$ 263,76</td>
+                                </tr>
+                                <tr>
+                                    <td>Econômico</td>
+                                    <td>4 anos</td>
+                                    <td>R$ 479,52</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="info-text">
+                            Os valores são proporcionais ao tempo contratado.<br>
+                            Quanto maior o período, menor o valor anual.<br>
+                            Após o período contratado, a renovação ocorre pelo valor padrão do serviço.<br>
+                            <span class="note-text">
+                                * Os valores apresentados são referentes apenas aos primeiros anos.
+                                Após o período contratado, será cobrado um valor mensal de R$ 49,99 (pago anualmente),
+                                que será o mesmo independente do plano escolhido.
+                            </span>
+                            <span class="note-text">
+                                * O valor da hospedagem mais completa, você paga diretamente ao provedor de hospedagens
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bloco 4: Manutenção Opcional -->
+            <section class="section" id="manutencao">
+                <div class="section-header">
+                    <h2 class="section-title">Manutenção Opcional</h2>
+                    <p class="section-description">
+                        Após a entrega do site, você pode contar com um acompanhamento mensal para manter o site sempre atualizado e funcionando corretamente.
+                    </p>
+                </div>
+
+                <div class="card maintenance-card">
+                    <div class="maintenance-main">
+                        <div class="info-icon">🛠️</div>
+                        <div>
+                            <p class="info-text">
+                                Após a entrega do site, é possível contratar um <strong>plano mensal opcional de manutenção</strong>,
+                                que inclui pequenas atualizações de conteúdo, suporte básico e orientações de uso.
+                            </p>
+                            <p class="info-text">
+                                Este plano é totalmente opcional: o site continua funcionando normalmente mesmo sem a contratação
+                                da manutenção mensal, ficando a critério do hotel avaliar a necessidade desse acompanhamento contínuo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="maintenance-price">
+                        <span class="card-price-label">Valor fixo do plano</span>
+                        <span class="card-price">R$ 85,00 / mês</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bloco 5: Propostas de Desenvolvimento -->
+            <section class="section" id="propostas">
+                <div class="section-header">
+                    <h2 class="section-title">Versões do Site do Hotel (Propostas de Desenvolvimento)</h2>
+                    <p class="section-description">
+                        Abaixo estão as propostas de desenvolvimento do site do seu hotel,
+                        separadas por versão. Cada proposta explica o que será entregue e o valor estimado para o desenvolvimento.
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Proposta 1 -->
+                    <article class="card version-card">
+                        <div class="card-badge">Proposta 1</div>
+                        <div class="card-header">
+                            <span class="card-icon">💎</span>
+                            <div>
+                                <h3 class="card-title">Site institucional com reservas via WhatsApp</h3>
+                            </div>
+                        </div>
+                        <ul class="card-list">
+                            <li>Modelo mais simples e objetivo para apresentar o seu hotel e facilitar o contato para reservas</li>
+                            <li>Layout moderno e responsivo (funciona muito bem em celulares)</li>
+                            <li>Página inicial personalizada com identidade visual do hotel</li>
+                            <li>Seções para apresentação de quartos, serviços, comodidades e localização</li>
+                            <li>Botão automático “Reservar pelo WhatsApp” em pontos estratégicos do site</li>
+                            <li>Cadastro inicial de até X tipos de acomodações (definidos no início do projeto)</li>
+                            <li>Indicado para hotéis que desejam presença profissional na internet com investimento inicial mais baixo</li>
+                            <li>Não possui sistema de reservas automatizadas dentro do site</li>
+                            <li><strong>Prazo estimado de desenvolvimento da Proposta 1: 15 a 30 dias</strong></li>
+                        </ul>
+                        <div class="card-price-block">
+                            <span class="card-price-label">Investimento estimado</span>
+                            <span class="card-price">R$ 1.200,00 a R$ 2.000,00</span>
+                            <p class="card-price-note">Dependendo de estrutura e complexidade do site.</p>
+                        </div>
+                    </article>
+
+                    <!-- Proposta 2 -->
+                    <article class="card version-card">
+                        <div class="card-badge card-badge-highlight">Proposta 2</div>
+                        <div class="card-header">
+                            <span class="card-icon">🛎️</span>
+                            <div>
+                                <h3 class="card-title">Site com sistema de reservas on-line</h3>
+                            </div>
+                        </div>
+                        <ul class="card-list">
+                            <li>Modelo mais completo, com sistema de reservas diretamente no site</li>
+                            <li>O hóspede escolhe as datas de entrada e saída → seleciona o tipo de quarto → preenche formulário de reserva</li>
+                            <li>Layout personalizado e profissional alinhado à identidade visual do hotel</li>
+                            <li>Sistema de reservas com formulário estruturado, envio de pedido de reserva por e-mail ou painel</li>
+                            <li>Possibilidade de integração com meios de pagamento (Pix, cartão, etc.), caso desejado em uma fase posterior</li>
+                            <li>Painel ou fluxo para gerenciar solicitações de reserva e cadastro de até X tipos de acomodações</li>
+                            <li>SEO básico para melhor posicionamento do hotel nos mecanismos de busca</li>
+                            <li>Maior organização e profissionalismo na gestão de reservas feitas pelo site</li>
+                            <li><strong>Prazo estimado de desenvolvimento da Proposta 2: 20 a 45 dias</strong></li>
+                        </ul>
+                        <div class="card-price-block">
+                            <span class="card-price-label">Investimento estimado</span>
+                            <span class="card-price">R$ 2.000,00 a R$ 3.500,00</span>
+                            <p class="card-price-note">Dependendo de estrutura e complexidade do site.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="info-text">
+                    <strong>Observação importante sobre ajustes:</strong> na primeira semana após a entrega, estão incluídas alterações de texto e pequenos ajustes visuais que o cliente solicitar. 
+                    Após esse período, novas mudanças podem ser cobradas à parte, de acordo com a complexidade de cada solicitação.
+                </p>
+                <p class="info-text">
+                    Esses valores são referentes apenas à produção inicial do site (desenvolvimento).<br>
+                    O pagamento é único e não se repete, sendo cobrado apenas uma vez no início do projeto.<br>
+                    Depois disso, o hotel arca apenas com os custos recorrentes de domínio e hospedagem.
+                </p>
+            </section>
+
+            <!-- Bloco 6: Conversão Final -->
+            <section class="section cta-section">
+                <div class="cta-inner">
+                    <h2 class="cta-title">Pronto para avançar com o site do seu hotel?</h2>
+                    <p class="cta-text">
+                        Se as condições de investimento, prazos e recursos atendem ao que você busca,
+                        você pode aprovar este orçamento agora mesmo e dar início ao projeto.
+                    </p>
+                    <a
+                        href="https://wa.me/5588981903220?text=Ol%C3%A1,%20analisei%20o%20or%C3%A7amento%20do%20site%20para%20hotel%20e%20gostaria%20de%20dar%20continuidade"
+                        target="_blank"
+                        class="cta-button"
+                    >
+                        Quero Aprovar Este Orçamento
+                    </a>
+                </div>
+            </section>
+        </main>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
