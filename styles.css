@@ -285,7 +285,7 @@ body {
 }
 
 .card-whatsapp-button.secondary {
-    background: #16a34a;
+    background: #22c55e;
 }
 
 .card-whatsapp-button:hover {
@@ -443,7 +443,7 @@ body {
 /* CTA final */
 .cta-section {
     text-align: center;
-    background: #0f172a;
+    background: #ffffff;
     border: none;
 }
 
@@ -456,7 +456,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.6rem;
-    color: #f9fafb;
+    color: #000000;
 }
 
 .cta-text {
